@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Stock_ex" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="927.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StockAvailability">
+    <children>
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #00A8A8;" text="Back" textFill="#f5efef" />
+        <Button fx:id="AddSupplies" layoutX="736.0" layoutY="129.0" mnemonicParsing="false" onAction="#AddSupplyButton" prefHeight="53.0" prefWidth="126.0" style="-fx-background-color: #00A8A8;" text="Add supplies" textFill="#eeebeb" />
+        <Text fill="#f8f3f3" layoutX="318.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Availability" wrappingWidth="351.64453125">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Text>
+        <TableView fx:id="Stock_Table" layoutX="105.0" layoutY="322.0" prefHeight="288.0" prefWidth="717.0" />
+        <ComboBox fx:id="EnterProductID" layoutX="63.0" layoutY="231.0" prefHeight="53.0" prefWidth="180.0" />
+        <DatePicker fx:id="EnterExpiryDate" layoutX="670.0" layoutY="231.0" prefHeight="53.0" prefWidth="192.0" promptText="Enter Expiry Date" />
+        <ComboBox fx:id="EnterSupplierID" layoutX="279.0" layoutY="231.0"  prefHeight="53.0" prefWidth="168.0" />
+        <ComboBox fx:id="EnterStoreID" layoutX="483.0" layoutY="231.0"  prefHeight="53.0" prefWidth="168.0" />
+        <Label layoutX="96.0" layoutY="194.0" prefHeight="31.0" prefWidth="143.0" text="Enter Product ID" textFill="#f8f8f8" />
+        <Label layoutX="303.0" layoutY="191.0" prefHeight="38.0" prefWidth="168.0" text="Enter Supplier ID" textFill="#f8f8f8" />
+        <Label layoutX="515.0" layoutY="195.0" prefHeight="31.0" prefWidth="155.0" text="Enter Store ID" textFill="#f8f8f8" />
+        <TextField fx:id="Quantity" layoutX="55.0" layoutY="120.0" prefHeight="53.0" prefWidth="180.0" promptText="Quantity" />
+    </children>
+</AnchorPane>

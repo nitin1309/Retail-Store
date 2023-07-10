@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="PaymentMode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="896.0" prefWidth="1316.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PaymentMode">
+    <children>
+        <Button fx:id="Cash" layoutX="430.0" layoutY="323.0" mnemonicParsing="false" onAction="#ButtonCash" prefHeight="66.0" prefWidth="116.0" style="-fx-background-color: #00A8A8;" text="Cash" textFill="WHITE" />
+        <Button fx:id="Card" layoutX="774.0" layoutY="323.0" mnemonicParsing="false" onAction="#ButtonCard" prefHeight="66.0" prefWidth="136.0" style="-fx-background-color: #00A8A8;" text="Card" textFill="WHITE" />
+        <Text fill="WHITE" layoutX="501.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Mode" wrappingWidth="475.48046875">
+            <font>
+                <Font name="System Bold" size="46.0" />
+            </font>
+        </Text>
+        <Button fx:id="Back" layoutX="36.0" layoutY="32.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="43.0" prefWidth="85.0" style="-fx-background-color: #00A8A8;" text="Back" textFill="WHITE" />
+    </children>
+</AnchorPane>

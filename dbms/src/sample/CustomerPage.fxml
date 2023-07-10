@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="937.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerPage">
+    <children>
+        <TextField fx:id="enter_search" layoutX="154.0" layoutY="56.0" prefHeight="51.0" prefWidth="537.0" promptText="Search" style="-fx-background-color: #27436B;">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="shopping_cart" layoutX="31.0" layoutY="127.0" mnemonicParsing="false" onAction="#ShoppingCartButton" prefHeight="51.0" prefWidth="104.0" style="-fx-background-radius: 0; -fx-background-color: #00A8A8;" text="Shopping Cart" textFill="WHITE" />
+        <Button fx:id="menu" layoutX="31.0" layoutY="195.0" mnemonicParsing="false" onAction="#MenuButton" prefHeight="51.0" prefWidth="104.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="Menu" textFill="#fffefe" />
+        <Button fx:id="search_button" layoutX="703.0" layoutY="56.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="51.0" prefWidth="104.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="Search" textFill="#fffefe">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="home_page_products" layoutX="152.0" layoutY="128.0" prefHeight="510.0" prefWidth="655.0" />
+        <Button layoutX="826.0" layoutY="332.0" mnemonicParsing="false" onAction="#openButton" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #9370DB;" text="OPEN" textFill="WHITE" />
+      <ComboBox fx:id="category" layoutX="31.0" layoutY="66.0" onAction="#handleCategory" prefHeight="31.0" prefWidth="104.0" />
+      <Label layoutX="53.0" layoutY="35.0" text="Category" textFill="#f5f5f5" />
+    </children>
+</AnchorPane>

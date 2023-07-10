@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="939.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeeDetails">
+    <children>
+        <TextField fx:id="Employee_ID" layoutX="74.0" layoutY="130.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter ID" />
+        <TextField fx:id="Employee_Street" layoutX="704.0" layoutY="202.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Street" />
+        <TextField fx:id="Employee_City" layoutX="704.0" layoutY="130.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter City" />
+        <TextField fx:id="Employee_Name" layoutX="74.0" layoutY="202.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Name" />
+        <TextField fx:id="Employee_State" layoutX="503.0" layoutY="202.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter State" />
+        <TextField fx:id="Employee_Pincode" layoutX="704.0" layoutY="279.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Pincode" />
+        <TextField fx:id="Employee_Password" layoutX="74.0" layoutY="279.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Password" />
+        <TextField fx:id="Employee_Phone" layoutX="301.0" layoutY="130.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Phone" />
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #00A8A8;" text="Back" textFill="#f5efef" />
+        <Button fx:id="Employee_Update" layoutX="359.0" layoutY="321.0" mnemonicParsing="false" onAction="#UpdateEmployeeButton" prefHeight="38.0" prefWidth="71.0" style="-fx-background-color: #00A8A8;" text="Update" textFill="#eeebeb" />
+        <Button fx:id="Employee_Delete" layoutX="571.0" layoutY="321.0" mnemonicParsing="false" onAction="#DeleteEmployeeButton" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: #00A8A8;" text="Delete" textFill="#ebe9e9" />
+        <Text fill="#f8f3f3" layoutX="350.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE" wrappingWidth="239.64453125">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Text>
+        <TableView fx:id="Employee_Table" layoutX="23.0" layoutY="363.0" onMouseClicked="#handleTable" prefHeight="258.0" prefWidth="894.0" />
+        <TextField fx:id="Employee_Salary" layoutX="503.0" layoutY="130.0" prefHeight="38.0" prefWidth="180.0" promptText="Enter Salary" />
+        <Button fx:id="Employee_Insert" layoutX="471.0" layoutY="321.0" mnemonicParsing="false" onAction="#InsertEmployeeButton" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: #00A8A8;" text="Insert" textFill="#eeebeb" />
+        <Label layoutX="133.0" layoutY="106.0" text="Enter ID" textFill="#fffefe" />
+        <Label layoutX="121.0" layoutY="184.0" text="Enter Name" textFill="#fffefe" />
+        <Label layoutX="114.0" layoutY="260.0" text="Enter Password" textFill="#fffefe" />
+        <Label layoutX="351.0" layoutY="106.0" text="Enter Phone" textFill="#fffefe" />
+        <Label layoutX="554.0" layoutY="106.0" text="Enter Salary" textFill="#fffefe" />
+        <Label layoutX="758.0" layoutY="106.0" text="Enter City" textFill="#fffefe" />
+        <Label layoutX="755.0" layoutY="184.0" text="Enter Street" textFill="#fffefe" />
+        <Label layoutX="748.0" layoutY="260.0" text="Enter Pincode" textFill="#fffefe" />
+        <Label layoutX="350.0" layoutY="184.0" text="Enter DOB" textFill="#fffefe" />
+        <Label layoutX="557.0" layoutY="184.0" text="Enter State" textFill="#fffefe" />
+        <Label layoutX="454.0" layoutY="260.0" text="Enter Store ID" textFill="#fffefe" />
+        <DatePicker fx:id="Employee_DOB" layoutX="302.0" layoutY="206.0" prefHeight="31.0" prefWidth="180.0" />
+        <ComboBox fx:id="Employee_StoreID" layoutX="432.0" layoutY="283.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

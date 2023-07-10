@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="932.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="employee_A" layoutX="96.0" layoutY="319.0" mnemonicParsing="false" onAction="#EmployeeButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="EMPLOYEE" textFill="WHITE" />
+        <Button fx:id="customers_A" layoutX="305.0" layoutY="319.0" mnemonicParsing="false" onAction="#CustomerButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="CUSTOMERS" textFill="WHITE" />
+        <Button fx:id="charity_A" layoutX="502.0" layoutY="320.0" mnemonicParsing="false" onAction="#CharityButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="CHARITY" textFill="WHITE" />
+        <Button fx:id="changepassword_A" layoutX="693.0" layoutY="319.0" mnemonicParsing="false" onAction="#ChangePasswordButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="CHANGE PASSWORD" textFill="WHITE" />
+        <Button fx:id="reports_A" layoutX="96.0" layoutY="188.0" mnemonicParsing="false" onAction="#ReportButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="REPORTS(ORDERS)" textFill="WHITE" />
+        <Button fx:id="stores_A" layoutX="305.0" layoutY="188.0" mnemonicParsing="false" onAction="#StoreButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="STORES" textFill="WHITE" />
+        <Button fx:id="suppliers_A" layoutX="502.0" layoutY="431.0" mnemonicParsing="false" onAction="#SupplierButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="SUPPLIERS" textFill="#fffcfc" />
+        <Button fx:id="stockavail_A" layoutX="693.0" layoutY="188.0" mnemonicParsing="false" onAction="#StockButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="STOCK AVAILIBILITY" textFill="WHITE" />
+        <Button fx:id="back" layoutX="415.0" layoutY="537.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="62.0" prefWidth="106.0" style="-fx-background-color: #9370DB; -fx-background-radius: 0;" text="LOG OUT" textFill="WHITE" />
+        <Text fill="WHITE" layoutX="277.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN CONTENTS" wrappingWidth="360.29296875">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Text>
+        <Button fx:id="products_A" layoutX="305.0" layoutY="431.0" mnemonicParsing="false" onAction="#ProductButtonA" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="PRODUCTS" textFill="WHITE" />
+    </children>
+</AnchorPane>

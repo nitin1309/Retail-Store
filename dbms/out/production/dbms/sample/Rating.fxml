@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Rating">
+    <children>
+        <Text fill="WHITE" layoutX="65.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    ITEM RATING" wrappingWidth="167.6499481201172">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="item_rating_rate" layoutX="24.0" layoutY="144.0" mnemonicParsing="false" onAction="#RateButton" prefHeight="34.0" prefWidth="250.0" style="-fx-background-color: #FF00FF; -fx-background-radius: 0;" text="RATE" textFill="WHITE" />
+        <Button fx:id="back" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#BackButton" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="BACK" textFill="WHITE" />
+        <ComboBox fx:id="Item_rate_cbox" layoutX="121.0" layoutY="79.0" opacity="0.74" prefHeight="27.0" prefWidth="55.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ShoopingCart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1039.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShopingCart">
+    <children>
+        <Button fx:id="PlaceOrder" layoutX="810.0" layoutY="319.0" mnemonicParsing="false" onAction="#PlaceOrderButton" prefHeight="49.0" prefWidth="145.0" style="-fx-background-color: #9370DB;" text="Place Order" textFill="WHITE" />
+        <Text fill="WHITE" layoutX="368.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shopping Cart" wrappingWidth="475.48046875">
+            <font>
+                <Font name="System Bold" size="46.0" />
+            </font>
+        </Text>
+        <Button fx:id="Back" layoutX="48.0" layoutY="22.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #00A8A8;" text="Back" textFill="WHITE" />
+        <TableView fx:id="PRODUCT_TABLE" layoutX="79.0" layoutY="184.0" onMouseClicked="#handleTable" prefHeight="335.0" prefWidth="679.0" />
+        <Label layoutX="45.0" layoutY="107.0" prefHeight="31.0" prefWidth="131.0" text="Quantity :" textFill="#fffefe" />
+        <Button fx:id="remove" layoutX="801.0" layoutY="138.0" mnemonicParsing="false" onAction="#RemoveButton" style="-fx-background-color: #00A8A8;" text="Remove" textFill="WHITE" />
+        <Button fx:id="save" layoutX="709.0" layoutY="138.0" mnemonicParsing="false" onAction="#SaveButton" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #00A8A8;" text="Save" textFill="WHITE" />
+        <TextField fx:id="Quantity" layoutX="45.0" layoutY="138.0" />
+        <TextField fx:id="TotalPrice" layoutX="699.0" layoutY="558.0" prefHeight="21.0" prefWidth="152.0" />
+        <Label layoutX="731.0" layoutY="537.0" text="Total Price" textFill="WHITE" />
+    </children>
+</AnchorPane>

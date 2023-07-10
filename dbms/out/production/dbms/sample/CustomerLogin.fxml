@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="928.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Text fill="WHITE" layoutX="288.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER LOGIN">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Text>
+        <TextField fx:id="customerid_CL" layoutX="389.0" layoutY="228.0" promptText="Enter Customer ID" style="-fx-background-radius: 0;" />
+        <TextField fx:id="password_CL" layoutX="389.0" layoutY="302.0" promptText="Enter Password" style="-fx-background-radius: 0;" />
+        <Button fx:id="login_CL" layoutX="408.0" layoutY="352.0" mnemonicParsing="false" onAction="#CustomerLogInButton" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="LOG IN" textFill="WHITE" />
+        <Label fx:id="pass_label_CL" layoutX="372.0" layoutY="188.0" prefHeight="18.0" prefWidth="184.0" text="Wrong Customer ID or Password" textFill="#ea5050" visible="false" />
+        <Button fx:id="back" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#BackButton" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="Back" textFill="WHITE" />
+        <Button fx:id="signup_CL" layoutX="408.0" layoutY="397.0" mnemonicParsing="false" onAction="#CustomerSignUpButton" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #9370DB; -fx-background-radius: 0;" text="SIGN UP" textFill="WHITE" />
+        <Label layoutX="422.0" layoutY="199.0" text="Enter Customer ID" textFill="WHITE" />
+        <Label layoutX="432.0" layoutY="271.0" text="Enter Password" textFill="WHITE" />
+    </children>
+</AnchorPane>

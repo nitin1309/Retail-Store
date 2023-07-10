@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="928.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Editprofilecustomer">
+    <children>
+        <Text fill="WHITE" layoutX="370.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Profile ">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Text>
+        <TextField fx:id="EditProfile_name" layoutX="121.0" layoutY="193.0" promptText="Enter Name" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile__username" layoutX="654.0" layoutY="193.0" promptText="Enter Username" style="-fx-background-radius: 0;" />
+        <Button fx:id="back" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#BackButton" style="-fx-background-color: #00A8A8; -fx-background-radius: 0;" text="Back" textFill="WHITE" />
+        <Button fx:id="EditProfileSavebutton" layoutX="407.0" layoutY="405.0" mnemonicParsing="false" onAction="#EditProfileSaveButton" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #9370DB; -fx-background-radius: 0;" text="Save Changes" textFill="WHITE" />
+        <TextField fx:id="EditProfile_state" layoutX="388.0" layoutY="270.0" promptText="Enter State" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_city" layoutX="655.0" layoutY="270.0" promptText="Enter City" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_pin" layoutX="388.0" layoutY="339.0" promptText="Enter Area Pincode" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_street" layoutX="121.0" layoutY="270.0" promptText="Enter Street" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_phone" layoutX="388.0" layoutY="193.0" promptText="Enter Phone number" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_newpassword" layoutX="64.0" layoutY="575.0" prefHeight="40.0" prefWidth="210.0" promptText="New Password" style="-fx-background-radius: 0;" />
+        <TextField fx:id="EditProfile_password" layoutX="65.0" layoutY="506.0" prefHeight="40.0" prefWidth="209.0" promptText="Current Password" style="-fx-background-radius: 0;" />
+        <Label fx:id="username_na_label" layoutX="654.0" layoutY="219.0" text="Not Available  !" textFill="#e74b4b" visible="false" />
+        <Label fx:id="username_ok_label" layoutX="654.0" layoutY="219.0" text="Okay  !" textFill="#3fd751" visible="false" />
+        <Text fill="WHITE" layoutX="620.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
+        <Button fx:id="EditProfileUpdatePassword" layoutX="332.0" layoutY="544.0" mnemonicParsing="false" onAction="#EditProfilePasswordUpdateButton" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #9370DB; -fx-background-radius: 0;" text="Update Password" textFill="WHITE" />
+        <Text fill="#f8f8f8" layoutX="65.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password Field" wrappingWidth="208.99999284744263">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+        <Label layoutX="176.0" layoutY="166.0" text="Enter Name" textFill="#eeeeee" />
+        <Label layoutX="413.0" layoutY="166.0" text="Enter Phone number" textFill="#eeeeee" />
+        <Label layoutX="696.0" layoutY="166.0" text="Enter Username" textFill="#eeeeee" />
+        <Label layoutX="169.0" layoutY="244.0" text="Enter Street" textFill="#eeeeee" />
+        <Label layoutX="443.0" layoutY="244.0" text="Enter State" textFill="#eeeeee" />
+        <Label layoutX="709.0" layoutY="244.0" text="Enter City" textFill="#eeeeee" />
+        <Label layoutX="425.0" layoutY="312.0" text="Enter Area Pincode" textFill="#eeeeee" />
+    </children>
+</AnchorPane>
